@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    transition: all .3s ease;
+}
+
+.formContainer {
+    background: linear-gradient(#ccc, #cfccfc);
+    padding: 2rem;
+    border-radius: 8px;
+    height: fit-content;
+    width: 30%;
+    margin: auto;
+
+    h1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px #666;
+        text-align: center;
+    }
+
+
+    .fieldContainer {
+        margin: 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        height: 4rem;
+
+        input {
+            border: none;
+            border-radius: 4px;
+            padding: .4rem;
+            min-width: 250px;
+            margin-top: .2rem;
+
+            &:focus {
+                outline: none;
+                // border: 1px solid rgb(221, 130, 239);
+                box-shadow: .1px .1px 3px rgb(168, 50, 174);
+                transition: all .2s;
+            }
+
+        }
+
+        .fieldContainerinput {
+            box-shadow: .1px .1px 3px rgb(168, 50, 174);
+        }
+
+        .unsuccessInput {
+            box-shadow: .1px .1px 3px rgb(255, 0, 43);
+        }
+
+
+    }
+
+    span {
+        padding: 2px;
+        color: rgb(255, 68, 0);
+        text-shadow: 1px 1px 6px rgb(230, 62, 32);
+        font-size: .8rem;
+    }
+}
+
+.fieldcHECKContainer {
+    height: 3rem;
+
+    .checkBox {
+        display: flex;
+
+        // align-items: baseline;
+        input {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgb(87, 44, 174);
+            border-radius: 2px;
+            appearance: none;
+            margin-left: 1rem;
+            cursor: pointer;
+
+            &:checked {
+                border-radius: 50%;
+                background-color: rgb(87, 44, 174);
+                border: 2px solid #fff;
+                box-shadow: 1px 1px 4px #666;
+                transition: all .3s;
+            }
+
+        }
+
+        .unsuccessChechbox {
+            // border: 2px solid rgb(230, 62, 32);
+            // box-shadow: .1px .1px 3px rgb(230, 62, 32);
+        }
+    }
+}
+
+.submitOntainer {
+    height: 4rem;
+    display: flex;
+    // flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4rem;
+
+    a {
+        text-decoration: none;
+        color: rgb(14, 52, 224);
+        font-size: 1.6rem;
+        font-weight: 900;
+
+        &:hover {
+            text-shadow: 2px 2px 4px #707bef;
+            transition: all .2s;
+        }
+    }
+
+    button {
+        border: none;
+        padding: .6rem 1.5rem;
+        border-radius: 4px;
+        background: linear-gradient(#908bd9, #c69bc6);
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        &:hover {
+            transition: all .3s;
+            font-size: 1.3rem;
+            background: linear-gradient(#a07da0, #8c86df);
+        }
+    }
+}
+
+@media(max-width:850px) {
+    .formContainer {
+        width: 50%;
+    }   
+}
