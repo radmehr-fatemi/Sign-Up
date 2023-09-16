@@ -2,8 +2,8 @@ import React from 'react';
 import './App.scss';
 import { Routes , Route ,Navigate } from "react-router-dom";
 
-import SignUp from './assets/component/SignUp';
-import Login from './assets/component/Login';
+import SignUp from './component/SignUp';
+import Login from './component/Login';
 
 const App = () => {
   return (
